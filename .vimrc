@@ -15,3 +15,16 @@ set relativenumber
 " Color
 color simple-dark
 
+" Remove netrw banner
+let g:netrw_banner=0
+
+" Statusline
+set laststatus=2
+set statusline=%f         " Path to the file
+set statusline+=\         " Separator
+set statusline+=%y        " File type
+set statusline+=%=        " Switch to the right side
+set statusline+=%l        " Current line
+set statusline+=/         " Separator
+set statusline+=%L        " Total lines
+set statusline+=%m        " File modified state
