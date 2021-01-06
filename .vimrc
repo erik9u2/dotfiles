@@ -1,5 +1,7 @@
 syntax on
 
+set nowrap
+
 " Indenting
 set tabstop=8     " tabs are at proper location
 set expandtab     " don't use actual tab character (ctrl-v)
