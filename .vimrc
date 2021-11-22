@@ -4,7 +4,7 @@ set hidden
 set encoding=utf-8
 
 " Enable mouse interactions
-set mouse=a
+set mouse=r
 
 " Plugins
 call plug#begin()
