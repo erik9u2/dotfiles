@@ -126,12 +126,9 @@ export PATH="$PATH:$HOME/apache-maven/3.6.3/bin"
 export DENO_INSTALL="/home/erik/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-alias gs='git status'
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
-
