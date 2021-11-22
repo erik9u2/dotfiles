@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " ctrl+p ignore
@@ -87,3 +88,10 @@ set listchars=tab:→\ ,trail:•
 
 " Clear search pattern shortcut
 command C let @/=""
+
+" Leader key
+let mapleader=" "
+
+" NERDTree
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFocus<CR>
