@@ -132,3 +132,14 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
+
+if [ -z "$TMUX" ]; then
+    # we're not in a tmux session
+
+    if [ ! -z "$SSH_TTY" ]; then
+        # We logged in via SSH
+
+        # start tmux
+        tmux attach
+    fi
+fi
