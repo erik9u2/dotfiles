@@ -6,11 +6,6 @@ set encoding=utf-8
 " Enable mouse interactions
 set mouse=r
 
-" Plugins
-call plug#begin()
-Plug 'ctrlpvim/ctrlp.vim'
-call plug#end()
-
 " ctrl+p settings
 let g:ctrlp_working_path_mode = 'a'
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|node_modules)$'
